@@ -1,6 +1,6 @@
-package com.example.addon.hud;
+package com.ismerioeyu.blowyexter.hud;
 
-import com.example.addon.AddonTemplate;
+import com.ismerioeyu.blowyexter.BlowyExter;
 import meteordevelopment.meteorclient.systems.hud.HudElement;
 import meteordevelopment.meteorclient.systems.hud.HudElementInfo;
 import meteordevelopment.meteorclient.systems.hud.HudRenderer;

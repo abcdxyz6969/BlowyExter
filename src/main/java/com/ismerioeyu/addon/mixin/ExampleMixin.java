@@ -1,6 +1,6 @@
-package com.example.addon.mixin;
+package com.ismerioeyu.blowyexter.mixin;
 
-import com.example.addon.AddonTemplate;
+import com.ismerioeyu.blowyexter.BlowyExter;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.RunArgs;
 import org.spongepowered.asm.mixin.Mixin;

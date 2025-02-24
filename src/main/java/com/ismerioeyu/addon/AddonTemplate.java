@@ -1,8 +1,8 @@
-package com.example.addon;
+package com.ismerioeyu.blowyexter;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.ModuleExample;
+import com.ismerioeyu.blowyexter.commands.CommandExample;
+import com.ismerioeyu.blowyexter.hud.HudExample;
+import com.ismerioeyu.blowyexter.modules.ModuleTest;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -20,10 +20,10 @@ public class AddonTemplate extends MeteorAddon {
 
     @Override
     public void onInitialize() {
-        LOG.info("Initializing Meteor Addon Template");
+        LOG.info("Initializing Meteor Addon BlowyExter");
 
         // Modules
-        Modules.get().add(new ModuleExample());
+        Modules.get().add(new ModuleTest());
 
         // Commands
         Commands.add(new CommandExample());
@@ -39,11 +39,11 @@ public class AddonTemplate extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "com.ismerioeyu.blowyexter";
     }
 
     @Override
     public GithubRepo getRepo() {
-        return new GithubRepo("MeteorDevelopment", "meteor-addon-template");
+        return new GithubRepo("adcdxyz6969", "BlowyExter");
     }
 }
