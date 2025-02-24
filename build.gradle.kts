@@ -9,6 +9,7 @@ base {
 }
 
 repositories {
+    mavenLocal()
     maven {
         name = "meteor-maven"
         url = uri("https://maven.meteordev.org/releases")
@@ -23,7 +24,7 @@ dependencies {
     // Fabric dependencies
     minecraft("com.mojang:minecraft:${properties["minecraft_version"] as String}")
     mappings("net.fabricmc:yarn:${properties["yarn_mappings"] as String}:v2")
-    modImplementation("net.fabricmc:fabric-loader:${properties["loader_version"] as String}")
+    modImplementation("meteordevelopment:meteor-client:${properties["meteor_version"] as String}")
 
     // Meteor Client dependency sử dụng meteor_version
     modImplementation("meteordevelopment:meteor-client:${properties["meteor_version"] as String}")
