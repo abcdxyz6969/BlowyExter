@@ -20,20 +20,20 @@ repositories {
 }
 
 dependencies {
-    // Fabric
+    // Fabric dependencies
     minecraft("com.mojang:minecraft:${properties["minecraft_version"] as String}")
     mappings("net.fabricmc:yarn:${properties["yarn_mappings"] as String}:v2")
     modImplementation("net.fabricmc:fabric-loader:${properties["loader_version"] as String}")
 
-    // Meteor
-    modImplementation("meteordevelopment:meteor-client:${properties["minecraft_version"] as String}-SNAPSHOT")
+    // Meteor Client dependency sử dụng meteor_version
+    modImplementation("meteordevelopment:meteor-client:${properties["meteor_version"] as String}")
 }
 
 tasks {
     processResources {
         val propertyMap = mapOf(
             "version" to project.version,
-            "mc_version" to project.property("minecraft_version"),
+            "mc_version" to project.property("minecraft_version")
         )
 
         filesMatching("fabric.mod.json") {
